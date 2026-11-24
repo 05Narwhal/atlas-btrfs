@@ -1,0 +1,36 @@
+[package]
+name = "atlas-btrfs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "MIT OR Apache-2.0"
+description = "Read Btrfs volumes: chunk map, subvolumes, inline, regular and sparse extents, zlib, LZO and zstd compression, crc32c checksums."
+repository = "https://github.com/05Narwhal/atlas-btrfs"
+readme = "README.md"
+keywords = ["btrfs", "filesystem", "linux", "parser", "subvolume"]
+categories = ["filesystem", "parser-implementations"]
+authors = ["Julian A. Loy"]
+
+[features]
+# Test volume builders and seed inputs, for crates that test against this one.
+test-util = []
+
+[dependencies]
+atlas-fs-core = { version = "0.1", path = "X:/Documents/Coding/Projects/Libraries/Rust/atlas-fs-core" }
+# zlib extents (and the compressed seed volume).
+miniz_oxide = "0.8"
+# zstd extents, and the compressed fixture images.
+zstd = { version = "0.14", default-features = false }
+
+[lints.rust]
+unsafe_code = "forbid"
+unused_must_use = "deny"
+rust_2018_idioms = { level = "warn", priority = -1 }
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+dbg_macro = "warn"
+todo = "warn"
+print_stdout = "warn"
+print_stderr = "warn"
+undocumented_unsafe_blocks = "deny"
