@@ -1,6 +1,6 @@
 # atlas-btrfs
 
-<!-- badges -->[![crates.io](https://img.shields.io/crates/v/atlas-btrfs.svg)](https://crates.io/crates/atlas-btrfs) [![docs.rs](https://img.shields.io/docsrs/atlas-btrfs)](https://docs.rs/atlas-btrfs) [![CI](https://github.com/05Narwhal/atlas-btrfs/actions/workflows/ci.yml/badge.svg)](https://github.com/05Narwhal/atlas-btrfs/actions/workflows/ci.yml) ![License](https://img.shields.io/crates/l/atlas-btrfs.svg)
+[![crates.io](https://img.shields.io/crates/v/atlas-btrfs.svg)](https://crates.io/crates/atlas-btrfs) [![docs.rs](https://img.shields.io/docsrs/atlas-btrfs)](https://docs.rs/atlas-btrfs) [![CI](https://github.com/05Narwhal/atlas-btrfs/actions/workflows/ci.yml/badge.svg)](https://github.com/05Narwhal/atlas-btrfs/actions/workflows/ci.yml) ![License](https://img.shields.io/crates/l/atlas-btrfs.svg)
 
 A read-only Btrfs reader. It implements `atlas_fs_core::fs::FileSystem`, so a mounted volume lists folders, looks up names, reads
 file content and reports its allocation through the same trait as the other `atlas-*` readers.
