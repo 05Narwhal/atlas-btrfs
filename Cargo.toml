@@ -1,12 +1,12 @@
 [package]
 name = "atlas-btrfs"
-version = "26.0.1-a"
+version = "26.0.2-a"
 edition = "2024"
 rust-version = "1.88"
 license = "MIT OR Apache-2.0"
 description = "Read Btrfs volumes: chunk map, subvolumes, inline, regular and sparse extents, zlib, LZO and zstd compression, crc32c checksums."
 repository = "https://github.com/05Narwhal/atlas-btrfs"
-homepage = "https://julianloy.com"
+documentation = "https://disk-atlas.julianloy.com/docs"
 readme = "README.md"
 keywords = ["btrfs", "filesystem", "linux", "parser", "subvolume"]
 categories = ["filesystem", "parser-implementations"]
@@ -17,7 +17,7 @@ authors = ["Julian A. Loy"]
 test-util = []
 
 [dependencies]
-atlas-fs-core = { version = "26.0.1-a", path = "../atlas-fs-core" }
+atlas-fs-core = { version = "26.0.2-a", path = "../atlas-fs-core" }
 # zlib extents (and the compressed seed volume).
 miniz_oxide = "0.8"
 # zstd extents, and the compressed fixture images.
