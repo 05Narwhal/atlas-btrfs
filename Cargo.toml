@@ -6,6 +6,7 @@ rust-version = "1.88"
 license = "MIT OR Apache-2.0"
 description = "Read Btrfs volumes: chunk map, subvolumes, inline, regular and sparse extents, zlib, LZO and zstd compression, crc32c checksums."
 repository = "https://github.com/05Narwhal/atlas-btrfs"
+homepage = "https://julianloy.com"
 readme = "README.md"
 keywords = ["btrfs", "filesystem", "linux", "parser", "subvolume"]
 categories = ["filesystem", "parser-implementations"]
